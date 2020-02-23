@@ -5,6 +5,9 @@ Every number typed on an input in the browser, corresponds to a combination of l
 ![Phone Keyboard](./phonekeyboard.png)
 
 From the combinations generated it will get suggestions that gets appended to the page. The suggestions come from a lib, which imports a dictionary of english words.
+Example:
+- Input: 8733
+- Output: ["tree","tref","urde","used","usee"]
 
 ### To run server locally
 ```bash
@@ -13,7 +16,7 @@ From the combinations generated it will get suggestions that gets appended to th
 npm install
 
 #run server
-node server.js
+npm start
 
 #check on browser:
 http://localhost:3000

@@ -16,13 +16,11 @@ function fillNumber(data) {
         const divParent = document.getElementById("words_suggestions")
         divParent.innerHTML = ""
         for (let i = 0; i < response.data.length; i++) {
-
+          let word = response.data[i]
           const newDiv = document.createElement("div")
-
-          for (let j = 0; j < response.data[i].length; j++) {
-            newDiv.innerHTML = response.data[i][j].word;
-            divParent.appendChild(newDiv)
-          }
+          newDiv.innerHTML = word
+          divParent.appendChild(newDiv)
+    
         }
 
 
@@ -37,4 +35,5 @@ function fillNumber(data) {
 
 function clean() {
   document.getElementById("words_suggestions").innerHTML = ""
+  document.getElementById('phone_number').value = ""
 }
