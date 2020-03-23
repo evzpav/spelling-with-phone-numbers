@@ -15,5 +15,5 @@ app.use(serveStatic(__dirname + "../../client"));
 
 app.post('/suggestions', Controller.postWordCombinations);
 
-app.listen(port, () => console.log(`Listening on port ${port}!`));
+app.listen(port, () => console.log(`Listening on port ${port}! http://localhost:${port}`));
 
